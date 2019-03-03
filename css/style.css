@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
@@ -13,76 +14,73 @@ body{
 }
 
 p{
-    
     font-size: 14px;
-    
+    font-family: 'Lucida Sans Unicode';
 }
 
-/* ==== Generic CSS ==== */
-
-.section-title{
-    
-    padding-top:90px;
-    padding-bottom: :50px;
+h4{
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+    color: rgb(74,139,134);
+    padding-left: 15px;
 }
 
-.section-title h2{
-    position: relative;
-    text-align: center;
-    color:#333;
-    font-size: 30px;
-    font-weight:400;
-    text-transform:uppercase;
-    
+h5{
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: 'Lucida Sans Unicode';
+    color: rgb(74,139,134);
+}
+h6{
+    color: darkgray;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 14px;
 }
 
-.section-title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    width: 60px;
-    height: 1px;
-    background-color:#129CF3;
-    margin-left: -30px;
+ul{
+    list-style: none;
 }
 
-.section-title p{
-    
-    color:#333;
-    font-size:18px;
-    line-height: 28px;
-    font-weight:300;
-    text-align: center;
-    margin-top: 35px;
-    
+li{
+    font-family: 'Myriad Pro';
 }
-
 
 .header{
-    
     background-image: url("../images/back2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
     
 }  
 
 .header-overlay{
-    
     background-color: rgba(31,31, 31, 0.1);
-      
 }
 
-.logo{
-    background-color: white;
-    margin-top: 10px;
-    padding-bottom: 50px;
+.toggle-button {
+    color: rgb(74,139,134);
     text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.toggle-button img{
+    max-width: 20px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+
+
+.logo{
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(74,139,134);
+    background-color: white;
+}
+
+.logo p{
+    padding-top: 20px;
 }
 
 .logo img{
@@ -92,50 +90,92 @@ p{
 .nav{
     background-color: white;
     margin-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 
 }
 
 .nav ul{
     padding-top: 10px;
-    padding-left: 40px;
+    padding-left: 10px;
 
 }
 
-.nav{
+.nav li{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding-right: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: darkgray;
+    font-size: 14px;
+}
+
+.nav li a{
+    color: darkgray;
+}
+.nav li a:hover{
+    text-decoration: none;
+}
+
+.pop-posts{
     background-color: white;
     margin-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.pop-posts h6{
+    font-family: 'Lucida Sans Unicode';
+    font-size: 10px;
+}
+
+.pop-posts h5{
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12px;
 
 }
 
-.sidebar-box{
-    background-color: white;
-    margin-top: 10px;
-    padding-bottom: 50px;
-    padding-left: 20px;
+.pop-posts ul{
+    padding-top: 5px;
 }
 
-.sidebar-box ul{
-    padding-top: 10px;
-}
-
-.sidebar-box img{
+.pop-posts img{
     width: 30%
 }
 
 .top-box{
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
     background-color: white;
 }
 
+
+.top-box h6{
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+
+.top-box .social{
+    position: absolute;
+    right: 40px;
+}
+
+.top-box h6, .top-box .social{
+    display:inline-block
+}
+
 .fa{
-    padding: 10px 10px 10px 10px;
     font-size: 10px;
     text-decoration: none;
-    width: 5px;
+    width: 20px;
+    height: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
 
 }
 
@@ -180,38 +220,47 @@ p{
 }
 
 .recent-works{
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: white;
-    
 }
-.recent-works h4{
-    font-size:12px;
-}
+
 
 .recent-works p{
     font-size:12px;
+    color: darkgray;
+    padding-right: 10px;
 }
 
-.recent-works #sub-banner img{
-    max-width: 150px;
+.recent-works .col-3 img{
+    max-width: 160px;
+}
+
+.recent-works .col-5 img{
+    max-width: 280px;
 }
 
 .image-block img{
-    padding: 10px 10px 10px 10px;
-    width: 824px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .footer{
     padding-left: 10px;
     padding-top: 10px;
+    padding-bottom: 1px;
     margin-top: 5px;
     background-color: white;
-    
 }
 
-#slider {
+.footer p{
+    font-size: 12px;
+    color: darkgray;
+}
+
+#slider{
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
